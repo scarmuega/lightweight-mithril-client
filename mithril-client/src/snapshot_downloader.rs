@@ -17,7 +17,7 @@ use std::path::Path;
 #[cfg(test)]
 use mockall::automock;
 
-use crate::common::CompressionAlgorithm;
+use crate::common::entities::CompressionAlgorithm;
 use crate::feedback::{FeedbackSender, MithrilEvent};
 use crate::utils::SnapshotUnpacker;
 use crate::MithrilResult;

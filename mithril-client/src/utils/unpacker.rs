@@ -4,7 +4,7 @@ use flume::Receiver;
 use std::path::Path;
 use tar::Archive;
 
-use crate::common::CompressionAlgorithm;
+use crate::common::entities::CompressionAlgorithm;
 use crate::utils::StreamReader;
 use crate::MithrilResult;
 

@@ -20,7 +20,7 @@ use tokio::sync::RwLock;
 #[cfg(test)]
 use mockall::automock;
 
-use mithril_common::MITHRIL_API_VERSION_HEADER;
+use crate::common::MITHRIL_API_VERSION_HEADER;
 
 use crate::{MithrilError, MithrilResult};
 

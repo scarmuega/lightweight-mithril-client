@@ -1,9 +1,9 @@
-use anyhow::Context;
 #[cfg(feature = "fs")]
-use mithril_common::digesters::{CardanoImmutableDigester, ImmutableDigester};
-use mithril_common::entities::{ProtocolMessage, ProtocolMessagePartKey};
-use mithril_common::messages::SignerWithStakeMessagePart;
-use mithril_common::protocol::SignerBuilder;
+use crate::common::digesters::{CardanoImmutableDigester, ImmutableDigester};
+use crate::common::entities::{ProtocolMessage, ProtocolMessagePartKey};
+use crate::common::messages::SignerWithStakeMessagePart;
+use crate::common::protocol::SignerBuilder;
+use anyhow::Context;
 use slog::{o, Logger};
 #[cfg(feature = "fs")]
 use std::path::Path;

@@ -2,6 +2,7 @@ use crate::aggregator_client::{AggregatorClient, AggregatorHTTPClient};
 use crate::certificate_client::{
     CertificateClient, CertificateVerifier, MithrilCertificateVerifier,
 };
+use crate::common::api_version::APIVersionProvider;
 use crate::feedback::{FeedbackReceiver, FeedbackSender};
 use crate::mithril_stake_distribution_client::MithrilStakeDistributionClient;
 use crate::snapshot_client::SnapshotClient;
@@ -9,7 +10,6 @@ use crate::snapshot_client::SnapshotClient;
 use crate::snapshot_downloader::{HttpSnapshotDownloader, SnapshotDownloader};
 use crate::MithrilResult;
 use anyhow::{anyhow, Context};
-use mithril_common::api_version::APIVersionProvider;
 use reqwest::Url;
 use slog::{o, Logger};
 use std::sync::Arc;
